@@ -508,6 +508,7 @@ section {
 --------------------------------------------------------------*/
 .skills .progress {
 	height: auto;
+	width: 20rem;
 	display: block;
 	background: none;
 	border-radius: 0;
