@@ -6,13 +6,47 @@
 */
 
 /* My own css types*/
-.hide {
-	display: none;
+.dropbtn {
+	background-color: #04aa6d;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
 }
 
-.myDIV:hover + .hide {
+.dropdown {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 150px;
+	margin-right: 20px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
 	display: block;
-	color: blue;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #3e8e41;
 }
 
 .btn {
@@ -514,14 +548,27 @@ section {
 	border-radius: 0;
 }
 
+.hide {
+	display: none;
+	height: auto;
+	width: 20rem;
+	background: none;
+	border-radius: 0;
+}
+
+.myDIV:hover + .hide {
+	display: block;
+	color: blue;
+}
+
 .skills .progress .skill {
-	padding: 0;
-	margin: 0 0 6px 0;
+	/* padding: 0;
+	margin: 0 0 6px 0; */
 	text-transform: uppercase;
 	display: block;
 	font-weight: 600;
 	font-family: 'Poppins', sans-serif;
-	color: #050d18;
+	color: white;
 }
 
 .skills .progress .skill .val {
